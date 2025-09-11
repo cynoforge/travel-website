@@ -1,11 +1,17 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Background from "./Background"
+ 
 
- function App(){
+function App() {
 
     return (
-        
-        <Background></Background>
-        
+
+      <>
+      <Background />
+      </>
+
+
+
     );
- }
- export default App
+}
+export default App

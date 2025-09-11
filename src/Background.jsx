@@ -27,14 +27,21 @@ function Background() {
     return () => clearInterval(Interval);//cleanup function to clear interval on unmount
   }, [])//empty dependency array to run only once on mount
 
+  // function for About Us Button
+  const aboutUsPage = () => {
+    window.location.href = "/AboutUs";
+  };
+
+
   return (
-    <div className="titleArea md:titleArea sm:titleArea lg:titleArea md-flex md:justify-center md:items-center">
+
+    <div className="titleArea md:titleArea sm:titleArea lg:titleArea md-flex md:justify-center md:items-center" >
       <div className="cardLeft">
         <div className="cardInnerLeft w-full md:w-1/2 lg:w-1/2 sm:w-full flex flex-col justify-center  ">
           <h2 className="h2 md:h2 lg:h2 ms:h2">Discover Your Next Adventure</h2>
           <h5 className="h5 md:h5 lg:h5 sm:h5">Plan your perfect getaway with curated itineraries, insider tips, and expert travel guides to make every journey seamless and exciting.</h5>
           <button className="bookButton md:bookButton lg:bookButton sm:bookButton">Explore Trip</button>
-          <button className="learnButton md:learnButton lg:learnButton sm:learnButton">Learn More</button>
+          <button className="learnButton md:learnButton lg:learnButton sm:learnButton" onClick={aboutUsPage}>Learn More</button>
         </div>
         <div className="cardInnerRight md:cardInnerRight w-full overflow-hidden object-cover transition-opacity duration-1000 ease-in-out">
           <img
@@ -47,7 +54,7 @@ function Background() {
 
       </div>
 
-    </div>
+    </div >
 
   );
 }
