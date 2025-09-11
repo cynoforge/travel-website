@@ -1,17 +1,13 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-content: [
-  "./index.html",
-  "./src/**/*.{js,ts,jsx,tsx}",
-],
 
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     extend: {
-      colors: {
-        "twitter-blue": "#1DA1F2",
-        "facebook-blue": "#1877F2",
-      },
-    },
+      fontFamily: {
+        // sans: ['Ubuntu', 'ui-sans-serif', 'system-ui'],
+        display: ['Roboto', 'ui-sans-serif', 'system-ui']
+      }
+    }
   },
   plugins: [],
 }

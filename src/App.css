@@ -113,4 +113,29 @@ body {
 .learnButton:hover {
   background-color: rgb(15, 10, 85);
   color: white;
+
+h1{
+font-size: 135px;
+}
+
+.heropic{
+    width: 910px;
+    height: 500px;
+}
+
+.contactcard{
+    min-width: 75%;
+    background: linear-gradient(30deg, #f0be61 15%, #f168db 40%, #e668f1 45%,#8B5CF6 80%, #3f335b 100%);
+    background-color: #fffffe;
+    border: solid #969189 1px;
+    border-radius: 0.3rem;
+    width: 50%;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    justify-self: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+i{
+    font-size: 24px;
 }
