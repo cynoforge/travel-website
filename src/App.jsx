@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import paris from "./assets/paris.jpg";
+import sydney from "./assets/sydney.jpg";
+import "./App.css";
+import "./Contact.css";
+import ContactInfo from "./Contact.jsx";
+import { CompanyContact } from "./Contact.jsx";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function ContactHeroSection() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="relative overflow-hidden">
+      {/* Background Image */}
+      <img src={paris} className="heropic absolute" alt="paris" />
+
+      {/* Content Container */}
+      <div className="relative flex flex-col justify-center items-center">
+        {/* Main Heading */}
+        <div className="text-center">
+          <h1
+            style={{
+              background: `url(${paris})`,
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              color: "transparent",
+            }}
+          >
+            <div className="grid grid-cols-4">
+              <div></div>
+              <div></div>
+              <div>
+                <span className="block">Keep</span>
+              </div>
+            </div>
+            <div>
+              <span className="flex justify-end">in Touch</span>
+            </div>
+          </h1>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default function App() {
+  return (
+    <>
+      <ContactHeroSection />
+      <div className="card contactcard">
+        <ContactInfo />
+      </div>
+      <hr />
+      <div className="card">
+        <CompanyContact />
+      </div>
+    </>
+  );
+}
