@@ -1,32 +1,20 @@
-import "./App.css";
-import "./Contact.css";
-import ContactInfo from "./Contact.jsx";
-import { CompanyContact } from "./Contact.jsx";
-import { ContactHeroSection } from "./Contact.jsx";
-import { useState } from 'react'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import FeaturedDestination from './components/FeaturedDestination'
+import React from 'react';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import Footer from './components/Footer';
+import FeaturedDestinations from './components/FeaturedDestination';
+import ContactSection from './components/ContactSection';
 
-
-export default function App() {
+function App() {
   return (
-    <>
-      <ContactHeroSection />
-      <div className="card contactcard">
-        <ContactInfo />
-      </div>
-      <hr />
-      <div className="card">
-        <CompanyContact />
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-
-        <div className="flex-grow  pt-20">
-          <FeaturedDestination />
+     <div className="min-h-screen bg-white font-sans">
+          <Navbar />
+          <HeroSection />
+          <FeaturedDestinations />
+          <ContactSection />
+          <Footer />
         </div>
-        <Footer />
-      </div>
-    </>
   );
 }
+
+export default App;
