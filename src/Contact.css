@@ -23,15 +23,15 @@ input:focus{
 }
 
 #txtName{
-    width: 31rem;
+    width: 28rem;
     margin-left: 6rem;
 }
 #txtEmail{
-    width: 31rem;
+    width: 28rem;
     margin-left: 1.5rem;
 }
 #txtSubject{
-    width: 66rem;
+    width: 59rem;
     margin-left: 6rem;
 }
 
@@ -44,7 +44,7 @@ textarea{
     margin-left: 6rem;
     border-style: none;
     color: white;
-    width: 66rem;
+    width: 59rem;
     border-bottom: solid white 1px;
 }
 
