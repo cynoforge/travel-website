@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
 }
 
+
 .titleArea {
   font-size: larger;
   font-size: 40px;
@@ -113,7 +114,7 @@ body {
 .learnButton:hover {
   background-color: rgb(15, 10, 85);
   color: white;
-
+}
 h1{
 font-size: 135px;
 }
