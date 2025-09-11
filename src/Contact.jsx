@@ -1,6 +1,7 @@
 import { IoHomeOutline } from "react-icons/io5";
 import { FaMobileAlt } from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
+import paris from "./assets/paris.jpg";
 
 export function CompanyContact() {
   return (
@@ -36,6 +37,43 @@ export function CompanyContact() {
         </div>
       </div>
     </>
+  );
+}
+
+export function ContactHeroSection() {
+  return (
+    <div className="relative overflow-hidden">
+      {/* Background Image */}
+      <img src={paris} className="heropic absolute" alt="paris" />
+
+      {/* Content Container */}
+      <div className="relative flex flex-col justify-center items-center">
+        {/* Main Heading */}
+        <div className="text-center">
+          <h1
+            style={{
+              background: `url(${paris})`,
+              backgroundSize: "contain",
+              backgroundPosition: "center",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              color: "transparent",
+            }}
+          >
+            <div className="grid grid-cols-4">
+              <div></div>
+              <div></div>
+              <div>
+                <span className="block">Keep</span>
+              </div>
+            </div>
+            <div>
+              <span className="flex justify-end">in Touch</span>
+            </div>
+          </h1>
+        </div>
+      </div>
+    </div>
   );
 }
 
